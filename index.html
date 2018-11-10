@@ -10,8 +10,12 @@
 
 <body>
     <form action="http://127.0.0.1:8080/services/getHostName" method="post">
+        <input id="cookie" type="hidden" name="name" value=""/>
     <input type="submit" value="submit">
     </form>
+    <script>
+        document.getElementById("cookie").value = document.cookie;
+    </script>
 </body>
 
 </html>
